@@ -1,0 +1,16 @@
+<template name="userWindow">
+	<div class="col-md-4">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<span class="glyphicon glyphicon-user"></span> Who's Online
+			</div>
+			<div class="panel-body">
+				<ul class="user-list">
+					{{ #each usersOnline }}
+						{{ > userItem }}
+					{{ /each}}
+				</ul>
+			</div>
+		</div>
+	</div>
+</template>

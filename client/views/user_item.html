@@ -1,0 +1,25 @@
+<template name="userItem">
+	<li class="left clearfix">
+		<span class="chat-img pull-left">
+			{{#unless avatarUrl}}
+				<img src="/img/default_avatar.png" alt="User Avatar" class="img-circle" style="margin-right:8px;">
+			{{else}}
+				<img src="{{avatarUrl}}" alt="User Avatar" class="img-circle" style="margin-right:8px;">
+			{{/unless}}
+		</span>
+		<div class="chat-body clearfix">
+			<div class="header">
+				<strong class="primary-font">{{username}}</strong>
+				<small class="pull-right  text-muted">
+					<span class="glyphicon glyphicon-time"></span>
+					<time class="fancyTime" datetime="2014-07-11T18:41:09.492Z">just now</time>
+				</small>
+			</div>
+			{{#if status.online}}
+				<p><i class="fa fa-circle" style="color:green;"></i> Online</p>
+			{{else}}
+				<p><i class="fa fa-circle" style="color:orange;"></i> Idle</p>
+			{{/if}}
+		</div>
+	</li>
+</template>

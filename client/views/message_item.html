@@ -1,0 +1,15 @@
+<template name="messageItem">
+	<li class="left clearfix">
+		<span class="chat-img pull-left"><img src="{{ avatarUrl }}" alt="User Avatar" class="img-circle"></span>
+		<div class="chat-body clearfix">
+			<div class="header">
+				<strong class="primary-font">{{ username }}</strong>
+				<small class="pull-right  text-muted">
+					<span class="glyphicon glyphicon-time"></span>
+					<time class="fancyTime" datetime="2014-01-24T17:22:23+0000">{{ time }}</time>
+				</small>
+			</div>
+			<p>{{ message }}</p>
+		</div>
+	</li>
+</template>

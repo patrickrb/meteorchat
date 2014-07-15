@@ -1,0 +1,9 @@
+{
+  "packages": {
+    "router": {},
+    "bootstrap-3": {},
+    "font-awesome": {},
+    "accounts-ui-bootstrap-3": {},
+    "user-status": {}
+  }
+}

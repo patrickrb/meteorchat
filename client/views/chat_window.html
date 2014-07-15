@@ -1,0 +1,44 @@
+
+<template name="chatWindow">
+	<div class="col-md-8">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<span class="glyphicon glyphicon-comment"></span> Chat
+                <div class="btn-group pull-right">
+					<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-chevron-down"></span>
+					</button>
+					<ul class="dropdown-menu slidedown">
+						<li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-refresh">
+						</span>Refresh</a></li>
+						<li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-ok-sign">
+						</span>Available</a></li>
+						<li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-remove">
+						</span>Busy</a></li>
+						<li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-time"></span>
+							Away</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-off"></span>
+							Sign Out</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="panel-body">
+				<input type="hidden" id="pageNum" value="1" />
+				<ul class="chat">
+					{{ #each messages }}
+						{{ > messageItem }}
+					{{ /each }}
+				</ul>
+			</div>
+			<div class="panel-footer">
+				<div id="messageInputGroup" class="input-group">
+					<input id="message" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+					<span class="input-group-btn">
+						<button id="submitNewMessage" class="btn btn-warning btn-sm has-spinner"><span class="spinner"><i class="fa fa-refresh fa-spin"></i></span>Send</button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
