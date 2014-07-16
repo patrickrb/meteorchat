@@ -6,7 +6,8 @@
       "bootstrap-3": {},
       "font-awesome": {},
       "accounts-ui-bootstrap-3": {},
-      "user-status": {}
+      "user-status": {},
+      "moment": {}
     },
     "packages": {
       "router": {
@@ -33,6 +34,11 @@
         "git": "https://github.com/mizzao/meteor-user-status.git",
         "tag": "v0.6.0",
         "commit": "dba80d742522ac104f2155f1db852922e4249f96"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
       },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",
